@@ -21,3 +21,10 @@
   .search-button,.light-button,.primary-small,.text-link{font-family:Arial,sans-serif}
   .home-lower{padding-top:14px}
 }
+.search-panel{margin:26px 7% 0}
+@media(max-width:760px){
+  #screen-home>.search-panel{margin:16px 0 0}
+  #screen-explore>.search-panel{margin:0 4% 42px}
+  .mobile-nav{position:static;display:flex;margin:14px 0 0;padding:4px;border-radius:15px;background:var(--ink);box-shadow:0 8px 20px rgba(23,23,27,.12);backdrop-filter:none}
+  .mobile-nav button{min-height:48px}
+}
