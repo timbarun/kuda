@@ -93,3 +93,48 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}.sour
   .dialog-actions{gap:7px}
   .related-list .event-card{display:block!important}
 }
+@media(max-width:760px){
+  .app-shell{padding-left:16px;padding-right:16px;padding-bottom:112px}
+  .hero{min-height:0;padding:43px 4% 38px;overflow:visible}
+  .hero-orbit{display:none}
+  .hero h1{font-size:58px;line-height:.95;max-width:290px;margin:21px 0 20px}
+  .hero-lede{max-width:300px;font-size:16px;line-height:1.48}
+  .search-panel{margin:0;padding:19px;border-radius:20px}
+  .search-form{height:61px;min-height:61px;padding-left:15px;border-radius:15px}
+  .search-icon{font-size:26px;margin-right:5px}
+  .search-form input{font-size:14px}
+  .search-button{width:46px;height:46px;flex-basis:46px;border-radius:12px;font-size:18px}
+  .quick-row{margin-top:16px;gap:7px}
+  .quick-label{font-size:11px}
+  .chip{font-size:12px;padding:8px 11px}
+  .home-lower{padding-top:52px}
+  .section-heading h2{font-size:25px}
+  .section-kicker{font-size:10px}
+  .text-link{font-size:12px}
+  .event-art{height:130px}
+  .art-word{font-size:20px}
+  .event-info h3{font-size:14px}
+  .event-description{font-size:11px;line-height:1.35}
+  .event-bottom{font-size:10px}
+  .page-intro h2{font-size:31px}
+  .page-intro p{font-size:14px}
+  .result-count{font-size:12px}
+  #screen-explore>.events-grid .event-card{grid-template-columns:126px 1fr}
+  #screen-explore>.events-grid .event-art{height:146px}
+  #screen-explore>.events-grid .event-info h3{font-size:15px}
+  #screen-explore>.events-grid .event-description{font-size:11px}
+  .profile-head h2{font-size:30px}
+  .profile-head p{font-size:13px}
+  .avatar{width:64px;height:64px;font-size:18px}
+  .stat-card{min-height:112px;padding:14px 11px}
+  .stat-card span,.stat-card small{font-size:10px}
+  .stat-card strong{font-size:38px}
+  .interest-list span{font-size:12px;padding:9px 11px}
+  .taste-card h3{font-size:14px}
+  .taste-card p{font-size:11px}
+  .mobile-nav{left:14px;right:14px;bottom:12px;border-radius:17px;padding:5px 5px}
+  .mobile-nav button{min-height:46px;font-size:10px;gap:3px}
+  .mobile-nav button span{font-size:24px;line-height:.9;transform:scale(1.05)}
+  #screen-explore>.events-grid .event-description{font-size:12px;line-height:1.38}
+  .event-description{font-size:11.5px}
+}
