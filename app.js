@@ -62,8 +62,6 @@ $$('[data-person]').forEach(button => button.addEventListener('click', () => sho
 
 const popular = [...demoEvents].sort((a,b) => b.popular - a.popular).map((event,index) => ({...event,rank:index+1}));
 renderEvents(demoEvents.slice(0,3), '#home-events', {why:true});
-renderEvents(popular.slice(0,6), '#popular-events', {rank:true});
-const pushkin = demoEvents.filter(event => event.tags.includes('пушкинская карта'));
-renderEvents(pushkin, '#pushkin-events'); $('#pushkin-count').textContent = `${pushkin.length} событий`;
+renderEvents(popular.slice(0,3), '#home-popular', {rank:true});
 renderEvents(demoEvents, '#events-grid', {why:true});
 renderProfile();
