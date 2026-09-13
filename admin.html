@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo-админка — куда?</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .admin-shell{max-width:920px;margin:0 auto;padding:0 24px 70px}.admin-header{display:flex;justify-content:space-between;align-items:center;padding:34px 0;border-bottom:1px solid var(--line)}.admin-header h1{font:800 30px Manrope;margin:0}.admin-header a{color:var(--muted);font-size:13px;text-decoration:none}.admin-note{background:#dfeaca;border-radius:16px;padding:18px 20px;margin:28px 0;color:#657050;font-size:13px;line-height:1.5}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.admin-card{background:var(--card);border-radius:17px;padding:22px}.admin-card h2{font:700 20px Manrope;margin:0 0 18px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}.field label{font-size:11px;color:var(--muted)}.field input,.field textarea,.field select{border:1px solid var(--line);border-radius:9px;background:#fffaf4;padding:10px 11px;outline:0;color:var(--ink)}.field textarea{min-height:75px;resize:vertical}.admin-submit{border:0;background:var(--ink);color:#fff;border-radius:10px;padding:12px 15px;cursor:pointer;font-weight:700}.admin-list{display:flex;flex-direction:column;gap:8px}.admin-event{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:10px;padding:10px}.admin-event div{flex:1;display:flex;flex-direction:column;gap:4px}.admin-event strong{font:700 12px Manrope}.admin-event small{font-size:10px;color:var(--muted)}.admin-event button{border:1px solid var(--line);background:transparent;border-radius:7px;padding:7px;font-size:11px;cursor:pointer}.danger{color:#c55f4e!important}.admin-empty{color:var(--muted);font-size:12px}.admin-reset{margin-top:15px;border:0;background:transparent;color:#aa6759;text-decoration:underline;cursor:pointer;font-size:11px}@media(max-width:700px){.admin-shell{padding:0 17px 50px}.admin-grid{grid-template-columns:1fr}.admin-header h1{font-size:23px}}
+    </style>
+  </head>
+  <body>
+    <div class="admin-shell">
+      <header class="admin-header"><h1>куда? / demo-админка</h1><a href="index.html">← Вернуться в приложение</a></header>
+      <div class="admin-note"><b>Только для прототипа.</b> События сохраняются в localStorage этого браузера, не на сервере. Так можно наполнить демо и проверить будущий сценарий редактора без backend.</div>
+      <div class="admin-grid">
+        <form id="event-form" class="admin-card"><h2>Добавить мероприятие</h2><div class="field"><label for="title">Название *</label><input id="title" required placeholder="Например: Ночь короткого кино" /></div><div class="field"><label for="type">Категория</label><select id="type"><option>выставка</option><option>кино</option><option>музыка</option><option>театр</option><option>лекция</option><option>фестиваль</option><option>мастерская</option></select></div><div class="field"><label for="date">Дата и время *</label><input id="date" required placeholder="Сб, 19:00" /></div><div class="field"><label for="place">Место *</label><input id="place" required placeholder="Площадка / адрес" /></div><div class="field"><label for="price">Цена</label><input id="price" placeholder="500 ₽ или Бесплатно" /></div><div class="field"><label for="description">Описание *</label><textarea id="description" required placeholder="Коротко о событии"></textarea></div><div class="field"><label for="sourceUrl">Ссылка на источник</label><input id="sourceUrl" type="url" placeholder="https://..." /></div><div class="field"><label for="pushkin"><input id="pushkin" type="checkbox" /> Доступно по Пушкинской карте</label></div><button class="admin-submit" type="submit">Опубликовать в demo</button></form>
+        <section class="admin-card"><h2>Добавленные события</h2><div id="custom-list" class="admin-list"></div><button id="reset-button" class="admin-reset" type="button">Сбросить demo-добавления</button></section>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>
